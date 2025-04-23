@@ -1,0 +1,4 @@
+2025-04-21 17:14:57,112 - config.logging_config - INFO - 데이터베이스 테이블이 생성되었습니다.
+2025-04-21 17:14:57,114 - config.logging_config - INFO - 총 0개의 지원사업 데이터를 로드했습니다.
+2025-04-21 17:14:57,115 - config.logging_config - INFO - 데이터 삽입 완료: 성공 0건, 실패 0건
+2025-04-21 17:14:57,115 - config.logging_config - INFO - 모든 작업이 완료되었습니다.

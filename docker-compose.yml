@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  db: # 데이터베이스 서버가 실행되고 있는 컴퓨터의 주소
+    image: postgres:15
+    container_name: bizup_db_container
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=bizup_db
+    ports:
+      - "5432:5432" # 외부:내부
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

@@ -1,0 +1,63 @@
+[project]
+name = "mdtojson"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiofiles>=24.1.0",
+    "aiohttp>=3.11.18",
+    "html2text>=2025.4.15",
+    "lxml>=5.3.2",
+    "olefile>=0.47",
+    "openai>=1.75.0",
+    "pathlib>=1.0.1",
+    "psycopg2-binary>=2.9.10",
+    "pyhwp>=0.1b15",
+    "pymupdf>=1.25.5",
+    "python-dotenv>=1.1.0",
+    "pyyaml>=6.0.2",
+    "ruff>=0.11.6",
+    "six>=1.17.0",
+    "sqlalchemy>=2.0.40",
+    "watchdog>=6.0.0",
+]
+
+[tool.ruff]
+# 파이썬 버전 설정
+target-version = "py312"
+
+# 린트 규칙 설정
+lint.select = [
+    "E",  # pycodestyle 에러
+    "F",  # pyflakes
+    "I",  # isort
+    "W",  # pycodestyle 경고
+]
+
+# 무시할 규칙
+lint.ignore = []
+
+# 자동 수정 가능한 규칙 설정
+lint.fixable = ["ALL"]
+
+# 라인 길이 설정
+line-length = 100
+
+# 제외할 파일/디렉토리
+exclude = [
+    ".git",
+    ".venv",
+    "venv",
+    "__pycache__",
+]
+
+[tool.ruff.format]
+# 따옴표 스타일
+quote-style = "double"
+
+# 들여쓰기 스타일
+indent-style = "space"
+
+# 줄 끝 스타일
+line-ending = "auto"
